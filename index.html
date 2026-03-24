@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coopers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAFAF8;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #2d5a3d;
+      --rule: #e0ddd8;
+      --card-bg: #F4F3F0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 24px 100px;
+    }
+
+    header {
+      margin-bottom: 64px;
+    }
+
+    h1 {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      font-size: 3rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 520px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 48px 0;
+    }
+
+    .bios {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .bio {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .bio h2 {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      font-size: 1.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .photo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: var(--card-bg);
+      border: 1px solid var(--rule);
+      overflow: hidden;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.7rem;
+      letter-spacing: 0.03em;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bio .role {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .bio p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 560px;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      margin-top: 4px;
+    }
+
+    .links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 400;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: border-color 0.2s;
+    }
+
+    .links a:hover {
+      border-color: var(--text);
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 520px) {
+      .container { padding: 48px 20px 64px; }
+      h1 { font-size: 2.2rem; }
+      .bio h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>The Coopers</h1>
+      <p>Two brothers from the south of England, working at the intersection of AI/ML and the real world.</p>
+    </header>
+
+    <div class="bios">
+
+      <div class="bio">
+        <div class="photo"><!-- <img src="sam.jpg" alt="Sam Cooper"> --></div>
+        <span class="role">AI &amp; Biotech</span>
+        <h2>Sam Cooper</h2>
+        <p>
+          Founder of Phenomic AI, now building AI/ML capabilities at Engitix Therapeutics.
+          PhD from Imperial College London. Works on deep learning for proteomics
+          and single-cell transcriptomics, with a focus on discovering new therapeutic
+          targets in fibrosis and cancer. 8 patents filed, multiple publications in
+          Nature Communications, PNAS, and Nature Methods.
+        </p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/sam-cooper-537814134/">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=REPLACE_ME">Scholar</a>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="bio">
+        <div class="photo"><!-- <img src="michael.jpg" alt="Michael Cooper"> --></div>
+        <span class="role">Software Engineering</span>
+        <h2>Michael Cooper</h2>
+        <p>
+          Full-stack engineer with a background in civil engineering and computer science.
+          Most recently at Datagrid, a construction-tech startup that built agentic AI
+          tools and exited to Procore. MSc (Distinction) from the University of Bath.
+          Experienced across React, TypeScript, AWS, and ML — from fintech forecasting
+          models to automating £1bn+ project workflows.
+        </p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/michael-cooper-engineering">LinkedIn</a>
+          <a href="https://github.com/REPLACE_ME">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      Hampshire, England — est. a while ago
+    </footer>
+
+  </div>
+</body>
+</html>
